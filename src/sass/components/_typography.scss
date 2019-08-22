@@ -11,7 +11,7 @@
   text-transform: uppercase;
   color: $main-text-dark;
 
-  &--invers {
+  &--invert {
     background-color: $main-text-dark;
     color: $main-text-light;
   }
@@ -20,17 +20,23 @@
     font: 500 1.35rem/1.44 $main-font;
     position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: -3rem;
-      top: 0.8rem;
-      background-color: $main-text-dark;
-      display: block;
-      width: 1.8rem;
-      height: 0.2rem;
-      background-clip: content-box;
-      flex-shrink: 0;
+    &--bg-colored {
+      color: $text-bg-colored;
+    }
+
+    &--decor {
+      &::before {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        top: 0.9rem;
+        background-color: $main-text-dark;
+        display: block;
+        width: 1.8rem;
+        height: 0.2rem;
+        background-clip: content-box;
+        flex-shrink: 0;
+      }
     }
   }
 }
@@ -41,14 +47,14 @@
   text-transform: uppercase;
   color: $main-text-dark;
 
-  &--invers {
+  &--invert {
     background-color: $main-text-dark;
     color: $main-text-light;
   }
 }
 
 //Заголовки списков и абзацев Н3
-.section-title {
+.paragrah-title {
   font: 800 1.35rem/1.44 $main-font;
   text-transform: uppercase;
   color: $main-text-dark;
@@ -57,4 +63,58 @@
     background-color: $main-text-dark;
     color: $main-text-light;
   }
+}
+
+//Оющий текст страницы
+.content-text {
+  position: relative;
+  font: 400 1.35rem/1.44 $main-font;
+  color: $main-text-color;
+
+  &--bold {
+    font: 700 1.35rem/1.44 $main-font;
+  }
+
+  &--colored {
+    color: $content-text-colored;
+  }
+
+  &--slash-deco {
+    &:before {
+      position: absolute;
+      left: -4rem;
+      content: '/';
+      color: $main-text-dark;
+      z-index: 1;
+      font: 500 4rem/1 $main-font;
+    }
+  }
+}
+
+//Шрифт футэра и сабфутера
+.page-footer {
+  &__title {
+    font: 800 1rem $main-font;
+    color: $page-footer-font-light;
+  }
+
+  &__cont-text {
+    font: 400 0.9rem/1.6 $main-font;
+    color: $page-footer-font-dark;
+  }
+}
+
+.page-sub-footer {
+  &__cont-text {
+    font: 100 0.9rem $main-font;
+    color: $page-sub-footer-text-color;
+  }
+}
+
+//Вертикальный текстовый декор
+.bg-decor-text-vert {
+  display: inline-block;
+  font: 800 10.2rem $main-font;
+  writing-mode: vertical-rl;
+  color: $bg-decor-text;
 }

@@ -1,31 +1,50 @@
-.baner__btn {
+.button {
+  display: block;
+  font: 800 1.1rem $main-font;
+  text-transform: uppercase;
+  color: $main-text-light;
   background-color: $btn-main-color;
-  box-shadow: $btn-box-shadow;
-
-  &:active {
-    background-color: $btn-active-color;
-    box-shadow: $btn-box-shadow-active;
-  }
-
+  padding: 1.2rem 2.4rem;
+  outline: none;
+  border: none;
+  transition: all 200ms linear;
+  
   &:hover {
     background-color: $btn-hover-color;
     box-shadow: $btn-box-shadow-hover;
   }
+  
+  &:active {
+    background-color: $btn-active-color;
+    box-shadow: $btn-box-shadow-active;
+  }
+  
+  @media screen and (min-width: 768px) {
+    font-size: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 7.5px;
+  }
 }
 
-.sections-btn {
-  background-color: $btn-main-color;
-  color: $main-color;
-  padding: 1.4rem;
-  font: 800 1rem $main-font;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  box-sizing: border-box;
-  border: none;
-  transition: all .3s linear;
+.footer-btn {
+  background: none;
+  border: 0.1rem solid $footer-btn-border-color;
+  padding: 0.2rem 0.8rem;
+  font: 800 0.9rem $main-font;
+  color: $page-footer-font-light;
+  outline: none;
+  transition: all 0.2s linear;
+  flex-shrink: 0;
   
   &:hover {
-    box-shadow: $btn-box-shadow;
+    border-color: $btn-hover-color;
+    background-color: $btn-hover-color;
+    box-shadow: $btn-box-shadow-hover;
+  }
+  
+  &:active {
+    background-color: $btn-active-color;
+    box-shadow: $btn-box-shadow-active;
   }
 }

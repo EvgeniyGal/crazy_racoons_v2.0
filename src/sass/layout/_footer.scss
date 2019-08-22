@@ -1,0 +1,180 @@
+.page-footer {
+  background: $page-footer-bg;
+
+  &__box {
+    padding: 3.8rem 0;
+    box-sizing: border-box;
+
+    &__group {
+      display: flex;
+      align-items: top;
+
+      &__item {
+        width: 10rem;
+        margin-right: 2rem;
+
+        &:last-child {
+          margin: 0 0 0 auto;
+        }
+
+        &:nth-last-child(2) {
+          margin: 0;
+        }
+
+        &:first-child {
+          width: 6.6rem;
+        }
+      }
+    }
+  }
+
+  &__logo-pic {
+    width: 4rem;
+  }
+
+  &__title {
+    font: 800 1rem $main-font;
+    color: $page-footer-font-light;
+    margin: 0 0 0.6rem 0;
+
+    &--social {
+      line-height: 1.62;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__text {
+    font: 400 0.9rem $main-font;
+    line-height: 1.6;
+    color: $page-footer-font-dark;
+    margin: 0;
+
+    &__link {
+      font: 400 0.9rem $main-font;
+      color: $page-footer-font-dark;
+      text-decoration: none;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: 0.1rem solid $footer-btn-border-color;
+    padding: 0.4rem 1rem;
+    font: 800 0.9rem $main-font;
+    color: $page-footer-font-light;
+    transition: all 0.3s linear;
+    flex-shrink: 0;
+
+    &:hover {
+      border-color: $page-sub-footer-text-color-hov;
+      background-color: $page-sub-footer-text-color-hov;
+    }
+  }
+
+  &__title {
+    font: 800 1 $main-font;
+    color: $page-footer-font-light;
+  }
+
+  &__text {
+    font: 800 1 $main-font;
+    color: $page-footer-font-dark;
+  }
+}
+
+.page-sub-footer {
+  background: $page-sub-footer-bg;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    box-sizing: border-box;
+
+    &__link {
+      color: $page-sub-footer-text-color;
+      font: 100 0.6rem $main-font;
+      text-decoration: none;
+      margin-right: 0.7rem;
+
+      &:nth-last-child(2) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $page-sub-footer-text-color-hov;
+      }
+    }
+
+    &__logo-ra {
+      margin-left: auto;
+
+      &__pic {
+        width: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social--seeт-m {
+    display: block;
+  }
+
+  .page-footer {
+    &__logo-pic {
+      width: 5.8rem;
+    }
+  }
+
+  .page-sub-footer {
+    &box {
+      padding: 1.2rem 0;
+
+      &__link {
+        font-size: 0.7rem;
+        margin-right: 0.8rem;
+
+        &:nth-last-child(2) {
+          margin-right: 0;
+        }
+      }
+
+      logo-ra {
+        &pic {
+          width: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    &__logo-pic {
+      width: 6.2rem;
+    }
+  }
+
+  .page-sub-footer {
+    &box {
+      padding: 1.4rem 0;
+
+      &__link {
+        font-size: 0.7.5rem;
+        margin-right: 1rem;
+
+        &:nth-last-child(2) {
+          margin-right: 0;
+        }
+      }
+
+      logo-ra {
+        &pic {
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
