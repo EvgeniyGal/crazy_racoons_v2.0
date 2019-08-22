@@ -1,0 +1,31 @@
+.baner__btn {
+  background-color: $btn-main-color;
+  box-shadow: $btn-box-shadow;
+
+  &:active {
+    background-color: $btn-active-color;
+    box-shadow: $btn-box-shadow-active;
+  }
+
+  &:hover {
+    background-color: $btn-hover-color;
+    box-shadow: $btn-box-shadow-hover;
+  }
+}
+
+.sections-btn {
+  background-color: $btn-main-color;
+  color: $main-color;
+  padding: 1.4rem;
+  font: 800 1rem $main-font;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  transition: all .3s linear;
+  
+  &:hover {
+    box-shadow: $btn-box-shadow;
+  }
+}
