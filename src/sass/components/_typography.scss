@@ -19,6 +19,14 @@
   text-transform: uppercase;
   color: $main-text-dark;
 
+  @media screen and (min-width: 768px) {
+    font-size: 2.7rem;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+
   &--invert {
     background-color: $main-text-dark;
     color: $main-text-light;
@@ -28,12 +36,20 @@
     font: 500 1.35rem/1.44 $main-font;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
+
     &--bg-colored {
       color: $text-bg-colored;
     }
 
     &--decor {
-      &::before {
+      &::after {
         content: '';
         position: absolute;
         left: -3rem;
@@ -44,20 +60,21 @@
         height: 0.2rem;
         background-clip: content-box;
         flex-shrink: 0;
+        
+        @media screen and (min-width: 768px) {
+          left: -4.6rem;
+          top: 0.5rem;
+          width: 2.8rem;
+          height: 0.3rem;
+        }
+        @media screen and (min-width: 1200px) {
+          left: -5rem;
+          top: 0.6rem;
+          width: 3rem;
+          height: 0.3rem;
+        }
       }
     }
-  }
-}
-
-//Заголовки разделов секций  Н3
-.partition-title {
-  font: 800 1.35rem/1.44 $main-font;
-  text-transform: uppercase;
-  color: $main-text-dark;
-
-  &--invert {
-    background-color: $main-text-dark;
-    color: $main-text-light;
   }
 }
 
@@ -71,6 +88,14 @@
     background-color: $main-text-dark;
     color: $main-text-light;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 1rem;
+  }
 }
 
 //Оющий текст страницы
@@ -79,21 +104,37 @@
   font: 400 1.35rem/1.44 $main-font;
   color: $main-text-color;
 
+  @media screen and (min-width: 768px) {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 0.9rem;
+  }
+
   &--bold {
     font: 700 1.35rem/1.44 $main-font;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
   }
 
   &--colored {
     color: $content-text-colored;
   }
 
-  &--slash-deco {
-    &:before {
+  &--slash-decor {
+    &:after {
       position: absolute;
+      z-index: 1;
       left: -4rem;
       content: '/';
       color: $main-text-dark;
-      z-index: 1;
       font: 500 4rem/1 $main-font;
     }
   }
@@ -104,18 +145,41 @@
   &__title {
     font: 800 1rem $main-font;
     color: $page-footer-font-light;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
   }
 
   &__cont-text {
     font: 400 0.9rem/1.6 $main-font;
     color: $page-footer-font-dark;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
   }
 }
 
 .page-sub-footer {
   &__cont-text {
-    font: 100 0.9rem $main-font;
+    font: 100 0.8rem $main-font;
     color: $page-sub-footer-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 1rem;
   }
 }
 
@@ -125,4 +189,11 @@
   font: 800 10.2rem $main-font;
   writing-mode: vertical-rl;
   color: $bg-decor-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14.6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16.2rem;
+  }
 }
