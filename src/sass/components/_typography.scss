@@ -60,7 +60,7 @@
         height: 0.2rem;
         background-clip: content-box;
         flex-shrink: 0;
-        
+
         @media screen and (min-width: 768px) {
           left: -4.6rem;
           top: 0.5rem;
@@ -100,7 +100,6 @@
 
 //Оющий текст страницы
 .content-text {
-  position: relative;
   font: 400 1.35rem/1.44 $main-font;
   color: $main-text-color;
 
@@ -125,6 +124,7 @@
   }
 
   &--colored {
+    position: relative;
     color: $content-text-colored;
   }
 
@@ -141,7 +141,7 @@
 }
 
 //Шрифт футэра и сабфутера
-.page-footer {
+.pf {
   &__title {
     font: 800 1rem $main-font;
     color: $page-footer-font-light;
@@ -169,7 +169,7 @@
   }
 }
 
-.page-sub-footer {
+.psf {
   &__cont-text {
     font: 100 0.8rem $main-font;
     color: $page-sub-footer-text-color;
