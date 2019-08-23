@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 64rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 71.5rem;
+  }
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
