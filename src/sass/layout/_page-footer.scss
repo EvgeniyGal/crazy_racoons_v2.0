@@ -1,9 +1,16 @@
-.page-footer {
+.pf {
   background: $page-footer-bg;
 
   &__box {
     padding: 3.8rem 0;
     box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+      padding: 5.6rem 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 6.2rem 0;
+    }
 
     &__group {
       display: flex;
@@ -12,6 +19,13 @@
       &__item {
         width: 10rem;
         margin-right: 2rem;
+
+        @media screen and (min-width: 768px) {
+          width: 9rem;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 10.4rem;
+        }
 
         &:last-child {
           margin: 0 0 0 auto;
@@ -30,60 +44,29 @@
 
   &__logo-pic {
     width: 4rem;
-  }
+    height: 1.4rem;
 
-  &__title {
-    font: 800 1rem $main-font;
-    color: $page-footer-font-light;
-    margin: 0 0 0.6rem 0;
-
-    &--social {
-      line-height: 1.62;
-      text-decoration: none;
-      font-size: 0.9rem;
+    @media screen and (min-width: 768px) {
+      width: 5.6rem;
+      height: 1.8rem;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 6.3rem;
+      height: 1.9rem;
     }
   }
 
-  &__text {
-    font: 400 0.9rem $main-font;
-    line-height: 1.6;
-    color: $page-footer-font-dark;
-    margin: 0;
+  &__link {
+    text-decoration: none;
 
-    &__link {
-      font: 400 0.9rem $main-font;
+    &:hover {
       color: $page-footer-font-dark;
       text-decoration: none;
     }
   }
-
-  &__button {
-    background: none;
-    border: 0.1rem solid $footer-btn-border-color;
-    padding: 0.4rem 1rem;
-    font: 800 0.9rem $main-font;
-    color: $page-footer-font-light;
-    transition: all 0.3s linear;
-    flex-shrink: 0;
-
-    &:hover {
-      border-color: $page-sub-footer-text-color-hov;
-      background-color: $page-sub-footer-text-color-hov;
-    }
-  }
-
-  &__title {
-    font: 800 1 $main-font;
-    color: $page-footer-font-light;
-  }
-
-  &__text {
-    font: 800 1 $main-font;
-    color: $page-footer-font-dark;
-  }
 }
 
-.page-sub-footer {
+.psf {
   background: $page-sub-footer-bg;
 
   &__box {
@@ -92,11 +75,23 @@
     padding: 0.7rem 0;
     box-sizing: border-box;
 
+    @media screen and (min-width: 768px) {
+      padding: 1.2rem 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 1.2rem 0;
+    }
+
     &__link {
-      color: $page-sub-footer-text-color;
-      font: 100 0.6rem $main-font;
       text-decoration: none;
       margin-right: 0.7rem;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 0.8rem;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 0.9rem;
+      }
 
       &:nth-last-child(2) {
         margin-right: 0;
@@ -112,6 +107,7 @@
 
       &__pic {
         width: 1.4rem;
+        height: 0.8rem;
       }
     }
   }
@@ -122,7 +118,7 @@
     display: block;
   }
 
-  .page-footer {
+  .pf {
     &__logo-pic {
       width: 5.8rem;
     }
@@ -150,31 +146,8 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .page-footer {
-    &__logo-pic {
-      width: 6.2rem;
-    }
-  }
-
-  .page-sub-footer {
-    &box {
-      padding: 1.4rem 0;
-
-      &__link {
-        font-size: 0.7.5rem;
-        margin-right: 1rem;
-
-        &:nth-last-child(2) {
-          margin-right: 0;
-        }
-      }
-
-      logo-ra {
-        &pic {
-          width: 2rem;
-        }
-      }
-    }
+@media screen and (min-width: 768px) {
+  .social-visual {
+    display: inline-block;
   }
 }
