@@ -8,15 +8,36 @@ html {
   box-sizing: inherit;
 }
 
+.container {
+  width: 45rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 45rem;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 64rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 64rem;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 71.5rem;
+    margin: 0 auto;
   }
 }
 
