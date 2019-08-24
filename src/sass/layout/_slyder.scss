@@ -1,0 +1,31 @@
+.slyder-background {
+    background: url("../images/baner-slyder.jpg") center/cover no-repeat;
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 0 2.5rem;
+
+      &__site-logo {
+        display: inline-block;
+        width: 6.6rem;
+        height: 2.3rem;
+      }
+
+      &__site-menu {
+        display: inline-block;
+        width: 2.7rem;
+        height: 1.65rem;
+        fill: $page-bg-color;
+      }
+    }
+}
+
+.slyder {
+  text-align: center;
+  padding: 0 0 6rem;
+  &__page-title {
+    padding: 0 10rem;
+    margin: 0 0 4.5rem;
+    line-height: 3.9rem;
+  }
+}
