@@ -171,15 +171,8 @@
 
 .psf {
   &__cont-text {
-    font: 100 0.8rem $main-font;
+    font: 300 0.6rem $main-font;
     color: $page-sub-footer-text-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 0.9rem;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 1rem;
   }
 }
 
