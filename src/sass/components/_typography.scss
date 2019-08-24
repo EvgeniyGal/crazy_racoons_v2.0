@@ -124,8 +124,13 @@
   }
 
   &--colored {
+    font: 500 1.35rem/1.44 $main-font;
     position: relative;
     color: $content-text-colored;
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
   }
 
   &--slash-decor {
