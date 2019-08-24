@@ -1,0 +1,33 @@
+%dash-small {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 0.3rem;
+    background-color: $secondary-color;
+    @media screen and (min-width: 768px) {
+      width: 2.8rem;
+      height: 0.3rem;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 3.1rem;
+      height: 0.35rem;
+    }
+  }
+  
+  %dash-big {
+      position: absolute;
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: $secondary-color;
+    @media screen and (min-width: 768px) {
+      width: 2.8rem;
+      height: 0.3rem;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 3.1rem;
+      height: 0.35rem;
+    }
+  }
