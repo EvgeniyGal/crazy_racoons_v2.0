@@ -31,6 +31,27 @@
     }    
 }
 
+.marked-list--small {
+  list-style: none;
+  &__item {
+      position: relative;
+      &::before {
+          content: '';
+          position: absolute;
+          left: 2rem;
+          top: 0.5rem;
+          width: 0.6rem;
+          height: 0.6rem;
+          background-color: $main-text-dark;
+          @media screen and (min-width: 768px) {
+              width: 0.75rem;
+              height: 0.75rem;
+              left: 0rem;
+          }
+      }      
+  }    
+}
+
 .numbered-list {
     list-style: none;
     display: flex;
