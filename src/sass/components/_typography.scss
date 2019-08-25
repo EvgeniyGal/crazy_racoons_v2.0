@@ -41,19 +41,19 @@
     }
   }
 
-  &--invert-secondary {    
-      font: 700 1.8rem/1.33 $main-font;
-      text-transform: uppercase;
-      background-color: $main-text-dark;
-      color: $main-text-light; 
-      @media screen and (min-width: 768px) {
-        font-weight: 800;
-        font-size: 0.9rem;
-        line-height: 1.6;
-      }
-      @media screen and (min-width: 1200px) {
-        font-size: 1rem;
-      } 
+  &--invert-secondary {
+    font: 700 1.8rem/1.33 $main-font;
+    text-transform: uppercase;
+    background-color: $main-text-dark;
+    color: $main-text-light;
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 
   &--descr-text {
@@ -190,6 +190,18 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 1rem;
+  }
+  &--invert {
+    font: 500 1.35rem/1.44 $main-font;
+    color: $main-text-light;
+    background-color: $main-text-dark;
+    @media screen and (min-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 }
 

@@ -1,0 +1,97 @@
+.common-section {
+  margin-bottom: 5rem;
+  &__text {
+    margin-bottom: 4rem;
+    &__headline {
+      width: 21.5rem;
+      margin-left: 11.5rem;
+      margin-bottom: 4rem;
+    }
+    &__description {
+      width: 37rem;
+      padding-left: 11.5rem;
+      position: relative;
+      &::before {
+        @extend %dash-big;
+        left: 7.5rem;
+        top: 0.8rem;
+      }
+    }
+  }
+  &__review {
+    width: 29.5rem;
+    margin: 0 auto;
+    &__card {
+      width: 29.5rem;
+      height: 21rem;
+      padding: 2rem 0rem;
+      margin: 0 auto;
+      box-shadow: $form-box-shadow;
+      display: flex;
+      justify-content: space-around;
+      &__student {
+        width: 5.5rem;
+        &__photo {
+          width: auto;
+          height: auto;
+        }
+        &__name {
+          font: 800 0.55rem/1.7 $main-font;
+        }
+      }
+      &__text {
+        font: 400 0.55rem/1.7 $main-font;
+        width: 18.5rem;
+        padding-right: 1.5rem;
+        overflow: auto;
+        //колесо прокрутки
+        &::-webkit-scrollbar-thumb {
+          width: 2px;
+          background-color: #000000;
+        }
+        //область прокрутки
+        &::-webkit-scrollbar-track {
+          width: 1px;
+          background-color: #f4f4f4;
+        }
+      }
+    }
+    &__pagination {
+      display: flex;
+      justify-content: space-between;
+      &__numbers {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        &__item button {
+          font: 400 0.6rem/1.5 $main-font;
+          color: $main-text-dark;
+          cursor: pointer;
+          border: none;
+          background-color: rgba(255, 255, 255, 0);
+          transition: font-size 200ms linear, text-decoration 200ms linear;
+          &:hover,
+          &:focus {
+            font-size: 9px;
+            font-weight: 800;
+            text-decoration: line-through;
+          }
+        }
+      }
+      &__arrows {
+          display: flex;
+        &__item {
+          font: 400 1rem/1 $main-font;
+          color: $main-text-light;
+          padding: 3px 4px;
+          background-color: $main-text-dark;
+          border: none;
+          cursor: pointer;
+          &:not(last-child) {
+              margin-right: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}
