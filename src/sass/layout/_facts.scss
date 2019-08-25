@@ -1,0 +1,49 @@
+.facts{
+    padding-bottom: 5.2rem;
+}
+.facts-title{
+    width: 36rem;
+    padding-left: 10rem;
+    padding-bottom: 4.2rem;
+}
+.facts-description {
+    position: relative;
+    &::before {
+        @extend %dash-big;
+        left: 7.5rem;
+        top: 0.6rem;
+        @media screen and (min-width: 768px) {
+            left: 0rem;
+        }
+    }            
+    width: 37rem;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    @media screen and (min-width: 768px) {
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    @media screen and (min-width: 1200px) {                
+        width: 23rem;
+    }
+}
+
+.facts__list__item{
+    width: 41.5rem;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+        @media screen and (min-width: 768px) {
+            width: auto;
+                padding-left: 3rem;
+                margin-bottom: 2rem;
+        }
+        &__title{
+            padding-bottom: 1.2rem;
+        }
+        &__text-marked{
+            margin-bottom: 2.1rem;
+        }
+}
