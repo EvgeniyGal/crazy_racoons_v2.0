@@ -136,6 +136,12 @@
       content: '/';
       color: $main-text-dark;
       font: 500 4rem/1 $main-font;
+      
+      @media screen and (min-width: 768px) {
+        font-size: 1.9rem;
+        left: -1.8rem;
+        top: 0.3rem;
+      }
     }
   }
 }
