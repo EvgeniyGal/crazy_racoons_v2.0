@@ -1,49 +1,83 @@
 .facts{
-    padding-bottom: 5.2rem;
-}
-.facts-title{
-    width: 36rem;
-    padding-left: 10rem;
-    padding-bottom: 4.2rem;
-}
-.facts-description {
-    position: relative;
-    &::before {
-        @extend %dash-big;
-        left: 7.5rem;
-        top: 0.6rem;
-        @media screen and (min-width: 768px) {
-            left: 0rem;
-        }
-    }            
-    width: 37rem;
-    padding-left: 10rem;
-    padding-bottom: 5rem;
+    margin-bottom: 5.2rem;
     @media screen and (min-width: 768px) {
-        padding-left: 4rem;
-        width: 20rem;
+        display: flex;
+        background-image: url(../images/facts_background.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: 100%;
     }
-    @media screen and (min-width: 1200px) {                
-        width: 23rem;
+    &-left{
+        @media screen and (min-width: 768px) {
+            width: 20rem;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 21rem;
+        }
     }
-}
-
-.facts__list__item{
-    width: 41.5rem;
-    padding-left: 5rem;
-    margin-bottom: 3rem;
+    &-title{
+        padding-bottom: 4.2rem;
+        @media screen and (max-width: 767px) {
+            width: 36rem;
+            padding-left: 10rem;
+        }
+    }
+    &-description {
+        position: relative;
+        &::before {
+            @extend %dash-big;
+            left: 7.5rem;
+            top: 0.6rem;
+            @media screen and (min-width: 768px) {
+                left: 0rem;
+            }
+        }            
+        width: 37rem;
+        padding-left: 10rem;
+        padding-bottom: 5rem;
+        @media screen and (min-width: 768px) {
+            padding-left: 4rem;
+            padding-bottom: 0;
+            width: 20rem;
+        }
+    }
+    &__list{
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    &__item{
+        width: 41.5rem;
+        padding-left: 5rem;
+        margin-bottom: 3rem;
         &:last-child {
             margin-bottom: 0rem;
         }
         @media screen and (min-width: 768px) {
-            width: auto;
-                padding-left: 3rem;
-                margin-bottom: 2rem;
+            width: 200px;
+            padding-left: 3rem;
+            margin-bottom: 0;
         }
         &__title{
             padding-bottom: 1.2rem;
+            @media screen and (min-width: 768px) {
+                padding-bottom: 1rem;
+            }
         }
         &__text-marked{
             margin-bottom: 2.1rem;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 1.3rem;
+            }
         }
+    }
+}
+}
+
+@media screen and (min-width: 768px) {
+    .one { order: 1; }
+    .two { order: 4; }
+    .three { order: 3;}
+    .four { order: 2; }
+    .one, .four{margin-bottom: 2.4rem;}
 }
