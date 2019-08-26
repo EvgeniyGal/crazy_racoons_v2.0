@@ -53,9 +53,10 @@
 }
 
 .numbered-list {
-    list-style: none;
-    display: flex;
+    list-style: none;    
     &__item {
+      display: flex;
+      justify-content: space-between;
         &__number {
             font: 800 2.5rem/1.2 $main-font;
             color: $main-text-dark;
@@ -67,12 +68,15 @@
               content: '';
               position: absolute;
               width: 100%;
-              height: 100%;
+              height: 2.5rem;
               background-image: linear-gradient(
                 to right,
                 rgba(255, 255, 255, 1) 25%,
                 rgba(255, 255, 255, 0) 25%
               );
+              @media screen and (min-width: 768px) {
+                height: 1.9rem;
+              }
             }  
             &::after {
               content: '';
@@ -111,12 +115,15 @@
               content: '';
               position: absolute;
               width: 100%;
-              height: 100%;
+              height: 1.6rem;
               background-image: linear-gradient(
                 to right,
                 rgba(255, 255, 255, 1) 25%,
                 rgba(255, 255, 255, 0) 25%
               );
+              @media screen and (min-width: 768px) {
+                height: 1.9rem;
+              }
             }  
             &::after {
               content: '';
