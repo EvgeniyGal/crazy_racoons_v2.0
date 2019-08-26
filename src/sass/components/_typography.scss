@@ -139,8 +139,13 @@
       
       @media screen and (min-width: 768px) {
         font-size: 1.9rem;
+        font-weight: 700;
         left: -1.8rem;
         top: 0.3rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-weight: 800;
       }
     }
   }

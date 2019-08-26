@@ -24,14 +24,14 @@
       display: flex;
       flex-direction: column;
       padding: 0 5.4rem;
-      justify-content: start;
+      justify-content: flex-start;
     }
 
     &:first-child {
       margin-bottom: 3.6rem;
       @media screen and (min-width: 768px) {
         margin: 0;
-        padding-top: 2.4rem;
+        padding-top: 1.8rem;
       }
     }
   }
@@ -60,8 +60,13 @@
     margin: 0 4rem 3.6rem 4rem;
 
     @media screen and (min-width: 768px) {
-      padding: 5.2rem 0;
+      padding: 6rem 0;
       margin: 0 5rem 0 0;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      padding: 5.2rem 0;
+      margin: 0 6rem 0 0;
     }
 
     &--lheight-mod {
@@ -87,6 +92,10 @@
         margin-left: 5.2rem;
       }
 
+      @media screen and (min-width: 1200px) {
+        margin-left: 6rem;
+      }
+
       &:first-child {
         margin-bottom: 2.4rem;
       }
@@ -107,6 +116,10 @@
           width: 2.4rem;
           margin-bottom: 0.3rem;
         }
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 0.3rem;
+        }
       }
     }
 
@@ -115,6 +128,10 @@
 
       @media screen and (min-width: 768px) {
         margin-right: 1rem;
+      }
+      
+      @media screen and (min-width: 1200px) {
+        margin-right: 3.8rem;
       }
     }
 
@@ -136,14 +153,23 @@
         @media screen and (min-width: 768px) {
           font-size: 1rem;
         }
+        
+        @media screen and (min-width: 1200px) {
+          font-size: 1,1rem;
+        }
       }
 
       &--sale {
         font-size: 3.8rem;
         margin-left: 0.6rem;
-
+        
         @media screen and (min-width: 768px) {
           font-size: 2.7rem;
+        }
+        
+        @media screen and (min-width: 1200px) {
+          font-size: 3rem;
+          margin-left: -0.2rem;
         }
       }
     }
@@ -152,28 +178,36 @@
   @media screen and (min-width: 768px) {
     &__visibl-tab {
       display: block;
-      text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.8rem;
     }
   }
 
   &__btn {
     width: 29.6rem;
     margin-left: 7rem;
-    
+
     @media screen and (min-width: 768px) {
       width: 20.2rem;
       margin: 0 auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 22.6rem;
     }
   }
 
   &__text-box {
     margin: 0 0 1rem 7rem;
     width: 30rem;
-    
+
     @media screen and (min-width: 768px) {
-      margin: 0;
-      width: 100%;
+      margin: 0 0 1.2rem 10%;
+      width: 90%;
+
+      &:nth-last-child(2) {
+        margin-bottom: 2.6rem;
+        padding-right: 4.2rem;
+      }
     }
   }
 
@@ -183,18 +217,5 @@
 
   &__text-offset {
     margin-bottom: 1.4rem;
-  }
-
-  &__decor-par {
-    position: relative;
-
-    &:before {
-      position: absolute;
-      content: '/';
-      left: -4rem;
-      color: black;
-      z-index: 1;
-      font: 500 4rem/1 $main-font;
-    }
   }
 }
