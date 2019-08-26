@@ -1,26 +1,74 @@
 .common-section {
   margin-bottom: 5rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12.5rem;
+  }
   &__text {
     margin-bottom: 4rem;
-    &__headline {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0rem;
+    }
+    &__headline {      
       width: 21.5rem;
       margin-left: 11.5rem;
       margin-bottom: 4rem;
+      @media screen and (min-width: 768px) {
+        width: 15rem;
+        margin-left: 0rem;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 17rem;
+      }
     }
     &__description {
       width: 37rem;
       padding-left: 11.5rem;
       position: relative;
+      @media screen and (min-width: 768px) {
+        width: 17rem;
+        padding-left: 4.5rem;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 19rem;
+        padding-left: 5rem;
+      }
       &::before {
         @extend %dash-big;
         left: 7.5rem;
         top: 0.8rem;
+        @media screen and (min-width: 768px) {
+          left: 0rem;
+        }
       }
     }
   }
   &__review {
     width: 29.5rem;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 42rem;
+      margin: 0rem;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 47.5rem;
+    }
+    &__list {
+      list-style: none;
+      &__item-1 {
+        display: none;
+      }
+      &__item-2 {
+        display: none;
+      }
+      &__item-3 {
+        display: block;
+      }
+    }
     &__card {
       width: 29.5rem;
       height: 21rem;
@@ -29,14 +77,37 @@
       box-shadow: $form-box-shadow;
       display: flex;
       justify-content: space-around;
+      @media screen and (min-width: 768px) {
+        width: 42rem;
+        height: 30.5rem;
+        padding: 3rem 0rem;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 47.5rem;
+        height: 34rem;
+      }
       &__student {
         width: 5.5rem;
+        @media screen and (min-width: 768px) {
+          width: 8rem;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 9rem;
+        }
         &__photo {
           width: auto;
           height: auto;
+          margin-bottom: 1.5rem;
         }
         &__name {
           font: 800 0.55rem/1.7 $main-font;
+          text-transform: uppercase;
+          @media screen and (min-width: 768px) {
+            font-size: 0.8em;
+          }
+          @media screen and (min-width: 1200px) {
+            font-size: 0.9rem;
+          }
         }
       }
       &__text {
@@ -44,14 +115,32 @@
         width: 18.5rem;
         padding-right: 1.5rem;
         overflow: auto;
+        @media screen and (min-width: 768px) {
+          font-size: 0.8rem;
+          width: 27rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 0.9rem;
+          width: 30rem;
+        }
+        &::-webkit-scrollbar {
+          width: 0.2rem;
+          margin-right: 3rem;
+          @media screen and (min-width: 768px) {
+            width: 0.3rem;
+          }
+        }
         //колесо прокрутки
         &::-webkit-scrollbar-thumb {
-          width: 2px;
+          width: 0.2rem;
           background-color: #000000;
+          @media screen and (min-width: 768px) {
+            width: 0.3rem;
+          }
         }
         //область прокрутки
         &::-webkit-scrollbar-track {
-          width: 1px;
+          width: 0.1rem;
           background-color: #f4f4f4;
         }
       }
@@ -59,6 +148,8 @@
     &__pagination {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
+      padding-left: 3rem;
       &__numbers {
         list-style: none;
         display: flex;
@@ -83,12 +174,15 @@
         &__item {
           font: 400 1rem/1 $main-font;
           color: $main-text-light;
-          padding: 3px 4px;
+          padding: 0.3rem 0.5rem;
           background-color: $main-text-dark;
           border: none;
           cursor: pointer;
           &:not(last-child) {
               margin-right: 0.1rem;
+          }
+          @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
           }
         }
       }
