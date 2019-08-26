@@ -2,16 +2,21 @@
    Import partials below
    */
 //Bootstrap griid
-@import "./base/normalize";
-@import "./base/reset";
-@import "./base/fonts";
+@import './base/normalize';
+@import './base/reset';
+@import './base/fonts';
 
-@import "./abstracts/variables";
+@import './abstracts/variables';
+@import './abstracts/placeholders';
 
-@import "./components/containers";
-@import "./components/typography";
-@import "./components/buttons";
+@import './components/containers';
+@import './components/typography';
+@import './components/buttons';
+@import './components/lists';
 
+@import './layout/start';
+@import './layout/future';
+@import './layout/warn';
 @import "./layout/important";
-@import "./layout/do-reg-pay";
-@import "./layout/page-footer";
+@import './layout/do-reg-pay';
+@import './layout/page-footer';
