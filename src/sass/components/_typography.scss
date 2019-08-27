@@ -21,7 +21,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 2.7rem;
-    line-height: 1.25;
+    // line-height: 1.25;
   }
   @media screen and (min-width: 1200px) {
     font-size: 3rem;
@@ -34,26 +34,26 @@
     color: $main-text-light;
     @media screen and (min-width: 768px) {
       font-size: 2.7rem;
-      line-height: 1.25;
+      // line-height: 1.25;
     }
     @media screen and (min-width: 1200px) {
       font-size: 3rem;
     }
   }
 
-  &--invert-secondary {    
-      font: 700 1.8rem/1.33 $main-font;
-      text-transform: uppercase;
-      background-color: $main-text-dark;
-      color: $main-text-light; 
-      @media screen and (min-width: 768px) {
-        font-weight: 800;
-        font-size: 0.9rem;
-        line-height: 1.6;
-      }
-      @media screen and (min-width: 1200px) {
-        font-size: 1rem;
-      } 
+  &--invert-secondary {
+    font: 700 1.8rem/1.33 $main-font;
+    text-transform: uppercase;
+    background-color: $main-text-dark;
+    color: $main-text-light;
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 
   &--descr-text {
@@ -111,6 +111,7 @@
   &--invers {
     background-color: $main-text-dark;
     color: $main-text-light;
+    line-height: 1;
   }
 
   @media screen and (min-width: 768px) {
@@ -165,6 +166,17 @@
       content: '/';
       color: $main-text-dark;
       font: 500 4rem/1 $main-font;
+      
+      @media screen and (min-width: 768px) {
+        font-size: 1.9rem;
+        font-weight: 700;
+        left: -1.8rem;
+        top: 0.3rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-weight: 800;
+      }
     }
   }
 
@@ -190,6 +202,18 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 1rem;
+  }
+  &--invert {
+    font: 500 1.35rem/1.44 $main-font;
+    color: $main-text-light;
+    background-color: $main-text-dark;
+    @media screen and (min-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 }
 
