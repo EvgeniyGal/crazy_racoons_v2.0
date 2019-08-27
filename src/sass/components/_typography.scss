@@ -136,6 +136,11 @@
     font-size: 0.9rem;
   }
 
+  &--invert {
+    background-color: $main-text-dark;
+    color: $main-text-light;
+  }
+
   &--bold {
     font: 700 1.35rem/1.44 $main-font;
 
@@ -166,7 +171,7 @@
       content: '/';
       color: $main-text-dark;
       font: 500 4rem/1 $main-font;
-      
+
       @media screen and (min-width: 768px) {
         font-size: 1.9rem;
         font-weight: 700;
@@ -203,6 +208,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 1rem;
   }
+
   &--invert {
     font: 500 1.35rem/1.44 $main-font;
     color: $main-text-light;
