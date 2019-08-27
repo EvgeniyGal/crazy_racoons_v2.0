@@ -1,31 +1,301 @@
 .slyder-background {
-    background: url("../images/baner-slyder.jpg") center/cover no-repeat;
+    background: radial-gradient(circle, rgba(28, 52, 77, .9) 0%, rgba(24, 28, 39, 1) 100%), url("../../../build/images/baner-slyder.png") 50% no-repeat;
+    @media screen and (min-width: 768px) {
+      background: #181c27
+      url("../../../build/images/baner-slyder-table.png") no-repeat;
+      background-size: contain;
+    }
+    @media screen and (min-width: 1200px) {
+      background: #181c27 url("../../../build/images/baner-slyder-desk.png") center no-repeat;
+      background-size: contain;
+    }
     .page-header {
       display: flex;
       justify-content: space-between;
       padding: 1.5rem 0 2.5rem;
+      @media screen and (min-width: 768px) {
+        padding: 2rem 0 2.5rem;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 113rem;
+      }
 
       &__site-logo {
         display: inline-block;
         width: 6.6rem;
         height: 2.3rem;
+        @media screen and (min-width: 768px) {
+          width: 5.6rem;
+          height: 1.8rem;
+        }
       }
+      
 
       &__site-menu {
         display: inline-block;
         width: 2.7rem;
         height: 1.65rem;
         fill: $page-bg-color;
+        @media screen and (min-width: 768px) {
+          width: 1.4rem;
+          height: 0.9rem;
+        }
       }
     }
 }
 
 .slyder {
   text-align: center;
-  padding: 0 0 6rem;
+  margin-bottom: 6rem;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 113rem;
+  }
+  &__button {
+    display: inline;
+    padding: 2rem 3.5rem;
+    text-decoration: none;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin: 0 0 0 4rem;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 25rem;
+    }
+    
+  }
+  &__content-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 40rem;
+  }
+  }
+  .slyder__fisrt-step {
+    flex-basis: 55%;
+  }
+
   &__page-title {
     padding: 0 10rem;
     margin: 0 0 4.5rem;
     line-height: 3.9rem;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 1rem;
+      line-height: 7rem;
+    }
+  }
+  &__video {
+    @media screen and (min-width: 768px) {
+      &::after {
+        display: inline-block;
+        content: '';
+        width: 3rem;
+        height: .5rem;
+        vertical-align: middle;
+        margin: 0 14rem 0 .6rem;
+        background: $main-text-light;
+      }
+    }
+  }
+  &__course {
+    display: inline;
+    &::before {
+      display: inline;
+      content: '-';
+      color: $main-text-light;
+      @media screen and (min-width: 768px) {
+          display: inline-block;
+          content: '';
+          width: 2.9rem;
+          height: .5rem;
+          margin: 0 .6rem;
+          background: $main-text-light;
+          vertical-align: middle;
+      }
+    }
+  }
+  }
+  .slyder__subtilte-top {
+    color: $main-text-light;
+    padding: 0 4rem;
+    text-align: center;
+    margin: 0 0 16rem;
+    letter-spacing: -0.25px;
+    text-transform: uppercase;
+    position: relative;
+      &::before {
+        position: absolute;
+        content: '<';
+        display: block;
+        color: $btn-hover-color;
+        font-weight: 700;
+        font-size: 1.7rem;
+        left: 7%;
+        top: -.3rem;
+        @media screen and (min-width: 768px) {
+          top: -.6rem;
+        }
+
+      }
+
+    &::after {
+        position: absolute;
+        content: '/>';
+        color: $btn-hover-color;
+        display: block;
+        font-weight: 700;
+        font-size: 1.7rem;
+        right: 3%;
+        bottom: 0%;
+      @media screen and (min-width: 768px) {
+        right: 34%;
+      }
+      }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    letter-spacing: 0.1px;
+    margin: 0 0 2rem;
+    padding: 0 13rem 0 4rem;
+  }
+  }
+  .slyder__open {
+    @media screen and (min-width: 768px) {
+      flex-basis: 28%;
+      align-items: flex-start;
+    }
+  .slyder__subtilte {
+    color: $main-text-light;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 4rem;
+    margin: 0 0 1rem;    
+    @media screen and (min-width: 768px) {
+      padding: 1rem 3rem 0;
+    }
+  }
+  .slyder__text {
+    color: $dop-text-color;
+    margin: 0 0 6rem;
+    padding: 0 4rem;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      padding: 0 3rem;
+    }
   }
 }
+
+.slyder__list-number {
+    padding: 3rem 0;
+}
+
+.slyder-number__vert {
+  @media screen and (min-width: 768px) {
+  text-align: left;
+  display: inline-block;
+  color: $main-text-light;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  letter-spacing: .2rem;
+  font-family: $main-font;
+  font-weight: 500;
+  writing-mode: tb-rl;
+  transform:rotate(180deg);
+  }
+}
+
+.slyder-number {
+  @media screen and (min-width: 768px) {
+  display: inline;
+  text-align: left;
+  color: $main-text-light;
+  font-size: .7rem;
+  line-height: 1rem;
+  letter-spacing: .1rem;
+  font-family: $main-font;
+  font-weight: 500;
+  margin-left: .5rem;
+  vertical-align: 100%;
+  }
+}
+
+.slyder__social-list {
+  @media screen and (min-width: 768px) {
+  text-align: right;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 0;
+    top: 100%;
+    transform: translateY(-400%)
+  }
+}
+
+
+.social-icon__twitter {
+  display: none;
+  @media screen and (min-width: 768px) {
+  display: block;
+  width: .8rem;
+  height: .9rem;
+  fill: $main-text-light;
+  }
+}
+
+.social-icon__facebook {
+  display: none;
+  @media screen and (min-width: 768px) {
+  display: block;
+  width: .5rem;
+  height: .95rem;
+  fill: $main-text-light;
+  margin-right: 1.8rem;
+  }
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .slyder-background {
+    @media screen and (min-width: 480px) {
+      background: radial-gradient(circle, rgba(28, 52, 77, .9) 0%, rgba(24, 28, 39, 1) 100%),
+        url("../../../build/images/baner-slyder@2x.png") 50% no-repeat;
+    }
+    @media screen and (min-width: 1200px) {
+      .slyder-background {
+        background: #181c27 url("../../../build/images/baner-slyder-desk@2x.png") center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  @media screen and (min-width: 768px) {
+    .slyder-background {
+      background: #181c27 url("../../../build/images/baner-slyder-table@2x.png") no-repeat;
+      background-size: contain;
+    }
+
+  }
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   @media screen and (min-width: 1200px) {
+     .slyder-background {
+       background: #181c27 url("../../../build/images/baner-slyder-desk@2x.png") center no-repeat;
+       background-size: contain;
+     }
+    }
+  }
