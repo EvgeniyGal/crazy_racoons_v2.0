@@ -241,3 +241,35 @@
     }
   }
 }
+
+.numbered-list-vert {
+  counter-reset: num-item-vert;
+  text-align: left;
+
+  &__item {
+    position: relative;
+    counter-increment: num-item-vert;
+
+    &:after {
+      transform: rotate(270deg);
+      content: "[ 0" counter(num-item-vert, decimal-leading-zero) " ]";
+      position: absolute;
+      z-index: 1;
+      top: 2rem;
+      left: -4.2rem;
+      font: 700 1.35rem/1 $main-font;
+      background-color: $content-text-colored;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: -2.6rem;
+      width: 0.5rem;
+      height: 5.4rem;
+      background-color: $main-text-light;
+    }
+  }
+}
