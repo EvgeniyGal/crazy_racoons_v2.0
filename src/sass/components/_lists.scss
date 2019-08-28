@@ -259,6 +259,12 @@
       left: -4.2rem;
       font: 700 1.35rem/1 $main-font;
       background-color: $content-text-colored;
+      
+      @media screen and (min-width: 768px) {
+        font-size: 0.6rem;
+        top: 1.2rem;
+        left: -2.4rem;
+      }
     }
 
     &::before {
@@ -270,6 +276,12 @@
       width: 0.5rem;
       height: 5.4rem;
       background-color: $main-text-light;
+      
+      @media screen and (min-width: 768px) {
+        width: 0.3rem;
+        height: 2.6rem;
+        left: -1.7rem;
+      }
     }
   }
 }

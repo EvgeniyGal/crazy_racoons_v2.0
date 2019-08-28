@@ -12,8 +12,20 @@
   &__item {
     margin-bottom: 4rem;
 
-    &:first-child {
+    &:nth-child(2) {
       margin-bottom: 4rem;
+    }
+
+    &:first-child {
+      .section-title {
+        width: max-content;
+        margin: 0 auto 1.2rem auto;
+      }
+
+      .section-title--descr-text {
+        width: 22rem;
+        margin: 0 0 3rem 12.2rem;
+      }
 
       @media screen and (min-width: 768px) {
         margin: 0;
@@ -21,7 +33,33 @@
     }
 
     &:last-child {
-      margin: 0 5rem 0 8rem;
+      .paragrah-title {
+        margin: 0 auto 2.2rem auto;
+        text-align: center;
+        width: 80%;
+      }
+
+      .numbered-list-vert {
+        margin-left: 10.2rem;
+
+        .vc-price {
+          display: flex;
+          align-items: flex-end;
+          margin-left: -2rem;
+        }
+      }
+
+      .numbered-list-vert__item {
+        margin-bottom: 2.2rem;
+        width: 25.6rem;
+      }
+
+      .numbered-list-vert .paragrah-title {
+        margin: 0 0 0.8rem 0;
+        font-weight: 700;
+        text-transform: none;
+        text-align: left;
+      }
 
       @media screen and (min-width: 768px) {
         margin: 0;
@@ -41,16 +79,6 @@
     }
   }
 
-  &__title {
-    width: max-content;
-    margin: 0 auto 1.2rem auto;
-
-    &__descr {
-      width: 22rem;
-      margin: 0 0 3rem 12.2rem;
-    }
-  }
-
   &__pic-ws {
     width: 45rem;
   }
@@ -58,7 +86,7 @@
   &__list {
     margin: 0 0 0 8rem;
     width: 30rem;
-        
+
     &__item {
       margin-bottom: 2.6rem;
     }
