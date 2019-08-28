@@ -1,0 +1,139 @@
+.pf {
+  background: $page-footer-bg;
+
+  &__box {
+    padding: 3.8rem 0;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+      padding: 5.6rem 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 6.2rem 0;
+    }
+
+    &__group {
+      display: flex;
+      align-items: top;
+
+      &__item {
+        width: 10rem;
+        margin-right: 2rem;
+
+        &:last-child {
+          margin: 0 0 0 auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+          width: 9rem;
+          
+          &:last-child {
+            width: 11rem;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          width: 10.4rem;
+          
+          &:last-child {
+            width: 12rem;
+          }
+        }
+
+        &:nth-last-child(2) {
+          margin: 0;
+        }
+
+        &:first-child {
+          width: 6.6rem;
+        }
+      }
+    }
+  }
+
+  &__logo-pic {
+    width: 4rem;
+    height: 1.4rem;
+
+    @media screen and (min-width: 768px) {
+      width: 5.6rem;
+      height: 1.8rem;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 6.3rem;
+      height: 1.9rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: $page-footer-font-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+.psf {
+  background: $page-sub-footer-bg;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+      padding: 1.2rem 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 1.2rem 0;
+    }
+
+    &__link {
+      text-decoration: none;
+      margin-right: 0.7rem;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 0.8rem;
+        font-size: 0.7rem;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 0.9rem;
+        font-size: 0.8rem;
+      }
+      
+      &:nth-last-child(2) {
+        margin-right: 0;
+      }
+      
+      &:hover {
+        color: $page-sub-footer-text-color-hov;
+      }
+    }
+    
+    &__logo-ra {
+      margin-left: auto;
+      
+      &__pic {
+        width: 1.4rem;
+        height: 0.8rem;
+        
+        @media screen and (min-width: 768px) {
+          width: 1.8rem;
+          height: 1rem;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 1.9rem;
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-visual {
+    display: inline-block;
+  }
+}

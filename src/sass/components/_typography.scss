@@ -1,0 +1,275 @@
+//Зоголово страници Н1
+.page-title {
+  font: 700 3rem/1.3 $main-font;
+  text-transform: uppercase;
+  color: $main-text-light;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4.5rem;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 5rem;
+  }
+}
+
+//Заголовки секций Н2
+.section-title {
+  font: 700 1.8rem/1.33 $main-font;
+  text-transform: uppercase;
+  color: $main-text-dark;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.7rem;
+    // line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  &--invert {
+    font: 700 1.8rem/1.33 $main-font;
+    text-transform: uppercase;
+    background-color: $main-text-dark;
+    color: $main-text-light;
+    @media screen and (min-width: 768px) {
+      font-size: 2.7rem;
+      // line-height: 1.25;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 3rem;
+    }
+  }
+
+  &--invert-secondary {
+    font: 700 1.8rem/1.33 $main-font;
+    text-transform: uppercase;
+    background-color: $main-text-dark;
+    color: $main-text-light;
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
+  }
+
+  &--descr-text {
+    font: 500 1.35rem/1.44 $main-font;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
+
+    &--bg-colored {
+      color: $text-bg-colored;
+    }
+
+    &--decor {
+      &::after {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        top: 0.9rem;
+        background-color: $main-text-dark;
+        display: block;
+        width: 1.8rem;
+        height: 0.2rem;
+        background-clip: content-box;
+        flex-shrink: 0;
+
+        @media screen and (min-width: 768px) {
+          left: -4.6rem;
+          top: 0.5rem;
+          width: 2.8rem;
+          height: 0.3rem;
+        }
+        @media screen and (min-width: 1200px) {
+          left: -5rem;
+          top: 0.6rem;
+          width: 3rem;
+          height: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+//Заголовки списков и абзацев Н3
+.paragrah-title {
+  font: 800 1.35rem/1.44 $main-font;
+  text-transform: uppercase;
+  color: $main-text-dark;
+
+  &--invers {
+    background-color: $main-text-dark;
+    color: $main-text-light;
+    line-height: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 1rem;
+  }
+}
+
+//Оющий текст страницы
+.content-text {
+  font: 400 1.35rem/1.44 $main-font;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 0.9rem;
+  }
+
+  &--invert {
+    background-color: $main-text-dark;
+    color: $main-text-light;
+  }
+
+  &--bold {
+    font: 700 1.35rem/1.44 $main-font;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &--colored {
+    font: 500 1.35rem/1.44 $main-font;
+    position: relative;
+    color: $content-text-colored;
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  }
+
+  &--slash-decor {
+    &:after {
+      position: absolute;
+      z-index: 1;
+      left: -4rem;
+      content: '/';
+      color: $main-text-dark;
+      font: 500 4rem/1 $main-font;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.9rem;
+        font-weight: 700;
+        left: -1.8rem;
+        top: 0.3rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-weight: 800;
+      }
+    }
+  }
+
+  &--marked {
+    font: 700 1.35rem/1.44 $main-font;
+    background-color: $text-bg-colored;
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.secondary-text {
+  font: 500 1.35rem/1.44 $main-font;
+  color: $main-text-dark;
+  @media screen and (min-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 1rem;
+  }
+
+  &--invert {
+    font: 500 1.35rem/1.44 $main-font;
+    color: $main-text-light;
+    background-color: $main-text-dark;
+    @media screen and (min-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+//Шрифт футэра и сабфутера
+.pf {
+  &__title {
+    font: 800 1rem $main-font;
+    color: $page-footer-font-light;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__cont-text {
+    font: 400 0.9rem/1.6 $main-font;
+    color: $page-footer-font-dark;
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.psf {
+  &__cont-text {
+    font: 300 0.6rem $main-font;
+    color: $page-sub-footer-text-color;
+  }
+}
+
+//Вертикальный текстовый декор
+.bg-decor-text-vert {
+  display: inline-block;
+  font: 800 10.2rem $main-font;
+  writing-mode: vertical-rl;
+  color: $bg-decor-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14.6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16.2rem;
+  }
+}

@@ -1,0 +1,148 @@
+.pgb {
+  margin-bottom: 5.8rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 9rem;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12.8rem;
+  }
+
+  &__title {
+    width: max-content;
+    margin: 0 auto 2.2rem auto;
+    padding-right: 5.6rem;
+
+    & span {
+      &:last-child {
+        margin-left: -0.3rem;
+        padding-left: 0.6rem;
+
+        @media screen and (min-width: 768px) {
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &__descr {
+      width: 38%;
+      margin: 0 auto 5.4rem;
+      text-align: left;
+
+      @media screen and (min-width: 768px) {
+        width: 45%;
+        margin: 0 0 3rem 4.6rem;
+      }
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      flex: 0 0 31rem;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 35.6rem;
+    }
+
+    &:first-child {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__list {
+    width: 54%;
+    margin-left: 11rem;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 3.6rem;
+    }
+
+    &__item {
+      margin-bottom: 2.8rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--title-offset {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__form {
+    width: 82%;
+    box-shadow: $form-box-shadow;
+    margin: 0 auto;
+    padding: 6.6rem 0;
+
+    &__input {
+      font: 700 0.8rem $main-font;
+      display: block;
+      width: 24rem;
+      margin: 0 0 1rem 6.6rem;
+      border: none;
+
+      @media screen and (min-width: 768px) {
+        width: 20rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 22.6rem;
+      }
+    }
+
+    &__lable {
+      display: block;
+      width: 24rem;
+      margin: 0 0 1.6rem 6.6rem;
+      font: 400 0.9rem $main-font;
+      color: $main-text-dark;
+      border-bottom: 0.1rem solid $form-main-color;
+      padding-bottom: 0.6rem;
+
+      @media screen and (min-width: 768px) {
+        width: 20rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 22.6rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+
+  &__btn {
+    width: 20.8rem;
+    margin-left: 6.6rem;
+
+    @media screen and (min-width: 768px) {
+      width: 14.6rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 16.2rem;
+    }
+  }
+}

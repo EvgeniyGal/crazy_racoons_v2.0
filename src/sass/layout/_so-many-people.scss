@@ -1,0 +1,69 @@
+.so-many-people {
+  margin-bottom: 3rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      margin-bottom: 3.5rem;
+    }
+  }
+  &__description {
+    @media screen and (min-width: 768px) {
+      &--indent {
+        padding-left: 4.5rem;
+        width: 19rem;
+      }
+    }
+  }
+  &__header {
+    padding: 0 3.5rem 0 7.5rem;
+    margin-bottom: 35px;
+    @media screen and (min-width: 768px) {
+      padding: 0 0 0 5rem;
+      margin-bottom: 1.5rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 0 0 6rem;
+    }
+  }
+  &__img-man {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 65px;
+    }
+  }
+  &__paragraph-title {
+    margin-bottom: 1.5rem;
+  }
+  &__paragraph-text {
+    & p {
+      margin-bottom: 1.5rem;
+      @media screen and (min-width: 768px) {
+        width: 17.6rem;
+      }
+    }
+    margin-bottom: 4rem;
+  }
+  &__img-old-man {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 768px) {
+      padding-top: 2.5rem;
+    }
+  }
+  &__paragraph {
+    padding: 0 3.5rem 0 4.5rem;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 0 0.6rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 2rem;
+    }
+  }
+}

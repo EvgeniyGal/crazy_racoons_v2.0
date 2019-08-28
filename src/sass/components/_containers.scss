@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*элемент виден на таблетке и десктопе, но не виден на мобильной версии*/
+.hidden {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+/*элемент виден на таблетке, desctop*/
+.hidden-mobile {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+/*элемент виден на мобильной версии, но скрывается на таблетке*/
+.hidden-tablet {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+/*элемент виден на desctop*/
+.hidden-desctop {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.container {
+  width: 45rem;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 64rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 71.5rem;
+  }
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}

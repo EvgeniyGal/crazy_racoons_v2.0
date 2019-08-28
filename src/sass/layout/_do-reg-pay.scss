@@ -1,0 +1,140 @@
+.drp {
+  margin-bottom: 3.8rem;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 7.8rem;
+    display: flex;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12.6rem;
+  }
+
+  &__item {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 31rem;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 35.6rem;
+    }
+
+    &:first-child {
+      margin-bottom: 4rem;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    &:last-child {
+      margin: 0 5rem 0 8rem;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+        display: flex;
+      }
+    }
+  }
+
+  &--bg-deco-pos {
+    vertical-align: top;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1.8rem 1.4rem;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 1.8rem 0;
+    }
+  }
+
+  &__title-group {
+    display: inline-block;
+    width: 22rem;
+    margin-left: -1.4rem;
+    padding-top: 0.8rem;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &--offset {
+      margin-bottom: 3.2rem;
+      margin-left: 4.6rem;
+      
+      @media screen and (min-width: 1200px) {
+        margin-left: 5rem;
+      }
+    }
+  }
+
+  &__btn {
+    width: 21.4rem;
+
+    @media screen and (min-width: 768px) {
+      width: 14.6rem;
+      margin-left: 4.6rem;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 16.2rem;
+      margin-left: 5.2rem;
+    }
+  }
+
+  &__title--mod {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 768px) {
+      flex-shrink: 0;
+      font-size: 1.7rem;
+      margin-right: 1.6rem;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      font-size: 1.9rem;
+      margin-right: 2.2rem;
+    }
+  }
+
+  &__text-offset {
+    margin-bottom: 1.8rem;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2.2rem;
+
+      &:first-child {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &__thin-col {
+    padding-right: 3rem;
+
+    @media screen and (min-width: 768px) {
+      padding-right: 1.8rem;
+      
+      &:last-child {
+        padding-right: 3.6rem;
+      }
+    }
+  }
+
+  &--al-right {
+    text-align: right;
+  }
+}
