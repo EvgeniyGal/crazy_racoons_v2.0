@@ -258,6 +258,7 @@
       top: 2rem;
       left: -4.2rem;
       font: 700 1.35rem/1 $main-font;
+      color: $main-text-light;
       background-color: $content-text-colored;
       
       @media screen and (min-width: 768px) {
@@ -273,7 +274,7 @@
       z-index: 2;
       top: 0;
       left: -2.6rem;
-      width: 0.5rem;
+      width: 0.7rem;
       height: 5.4rem;
       background-color: $main-text-light;
       
