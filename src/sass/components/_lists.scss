@@ -225,3 +225,34 @@
     }
   }
 }
+
+.numbered-list--orange {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1.2rem;
+    height: 5rem;
+    background: $main-text-light;
+    left: -4.2rem;
+    top: .5rem;
+    z-index: 2;
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    counter-increment: number;
+    content: "[ 00" counter(number) " ]";
+    transform: rotate(-90deg);
+    color: $main-text-light;
+    background: $content-text-colored;
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.95rem;
+    font-family: $main-font;
+    left: -5.2rem;
+    top: 2rem;
+    z-index: 1;
+  } 
+}
