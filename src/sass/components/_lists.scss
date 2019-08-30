@@ -207,6 +207,17 @@
       background-image: url(../images/list-decor-element.png);
       background-repeat: no-repeat;
       background-position: bottom right;
+
+      @media screen and (min-width: 768px) {
+        left: -4.4rem;
+        padding-bottom: 1.2rem;
+        background-image: url(../images/list-decor-element-s.png);
+        font-size: 1.7rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.9rem;
+      }
     }
 
     &::before {
@@ -215,13 +226,18 @@
       z-index: 2;
       top: 0;
       left: -5.4rem;
-      width: 1.5rem;
+      width: 1.2rem;
       height: 2.5rem;
       background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 1) 50%,
         rgba(255, 255, 255, 0)
       );
+
+      @media screen and (min-width: 768px) {
+        width: 1rem;
+        left: -4.4rem;
+      }
     }
   }
 }
