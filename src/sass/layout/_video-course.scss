@@ -251,3 +251,132 @@
     }
   }
 }
+=======
+.video-course {
+    text-align: center;
+    &__header {
+        @media screen and (min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+        }
+        &__image {
+            width: auto;
+            height: auto;
+            margin: 0 0 2.5rem;
+            @media screen and (min-width: 768px){
+                flex-basis: 45%;
+            }
+        }
+        &__header-text {
+            display: none;
+            @media screen and (min-width: 768px){
+                display: block;
+                text-align: left;
+                flex-basis: 53%;
+                padding: 0 2rem;
+            }
+            &__section-title {
+            @media screen and (min-width: 768px) {
+
+                font-weight: 800;
+                line-height: 3.365rem;
+                margin-bottom: 2.8rem;
+            }
+            }
+            &__subtitle-top {
+                @media screen and (min-width: 768px){
+                    position: relative;
+                    padding: 0 12rem 0 4rem;
+                    &::before {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: 2.8rem;
+                        height: .3rem;
+                        left: 0;
+                        top: 20%;
+                        background: $main-text-dark;
+                    }
+                }
+            }
+        }
+    }
+    &__video-course-content {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content-subtitle {
+            text-align: left;
+            font-size: 1.05rem;
+            line-height: 1.65rem;
+            padding: 0 7.7rem;
+            margin: 0 0 3.8rem;
+            @media screen and (min-width: 768px){
+                flex-basis: 25%;
+                padding: 0 4rem 0 0;
+                font-size: .9rem;
+                line-height: 1.7rem;
+                font-weight: 800;
+            }
+        }
+    }
+    &__list {
+        text-align: left;
+        counter-reset: number;
+        padding: 0 7rem 0 10.6rem;
+        margin-bottom: 5.5rem;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          flex-basis: 68%;
+          padding: 0;
+        }
+        &__item {
+            margin-bottom: 2.7rem;
+            @media screen and (min-width: 768px) {
+              flex-basis: 27%;
+            }
+            &__title {
+                font-size: 1.292rem;
+                line-height: 2.31rem;
+                color: $main-text-dark;
+                margin-bottom: 2rem;
+                @media screen and (min-width: 768px){
+                    margin-bottom: 1rem;
+                }
+            }
+            &__subtitle {
+                line-height: 1.95rem;
+            }
+        }
+    }
+    &__footer {
+        @media screen and (min-width: 768px){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+        &__text {
+            text-align: left;
+            padding: 0 0 0 6rem;
+            margin-bottom: 3.8rem;
+            @media screen and (min-width: 768px){
+                flex-basis: 40%;
+            }
+            &::after {
+                left: 3rem;
+                top: 0;
+                @media screen and (min-width: 768px){
+                    left: 4rem;
+                }
+            }
+        }
+        &__button {
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0 8rem;
+        }
+    }
+}

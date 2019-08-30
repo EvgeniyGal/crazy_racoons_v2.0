@@ -15,70 +15,69 @@
       </p>
     </div>
   </div>
-  <div class="so-many-people__img-man hidden-desctop">
-    <img
-      src="images/so-many-people-man-desctop@1X.png"
-      alt="thinking young guy"
-      sizes="306px"
-      srcset="
-        images/so-many-people-man-desctop@1X.png 306w,
-        images/so-many-people-man-desctop@2X.png 612w
-      "
-      height="189"
-    />
+  <div>
+    <picture>
+      <source
+        media="(min-width:1200px)"
+        sizes="307px"
+        srcset="
+          images/so-many-peopla-man-desctop@1X-min.png 307w,
+          images/so-many-people-man-desctop@2X-min.png 614w
+        "
+      />
+      <source
+        media="(min-width:768px)"
+        sizes="275px"
+        srcset="
+          images/so-many-people-man-tablet@1X-min.png 275w,
+          images/so-many-people-man-tablet@2X-min.png 550w
+        "
+      />
+      <img
+        srcset="
+          images/so-many-people-man-mobie@1X-min.png  447w,
+          images/so-many-people-man-mobile@2X-min.png 894w
+        "
+        sizes="447px"
+        src="images/so-many-people-man-mobie@1X-min.png"
+        alt="Thinking man"
+        class="so-many-people__img-man"
+      />
+    </picture>
   </div>
-  <div class="so-many-people__img-man hidden-tablet">
-    <img
-      src="images/so-many-people-thinking-man-mobile@1X-min.png"
-      alt="thinking young guy"
-      sizes="447px"
-      srcset="
-        images/so-many-people-thinking-man-mobile@1X-min.png 447w,
-        images/so-many-people-thinking-man-mobile@2X-min.png 894w
-      "
-      height="210"
-      width="447"
-    />
+  <div class="hidden">
+    <div>
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          sizes="307px"
+          srcset="
+            images/so-many-people-old-man-desctop@1X-min.png 307w,
+            images/so-many-people-old-man-desctop@2X-min.png 614w
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          sizes="275px"
+          srcset="
+            images/so-many-people-old-man-tablet@1X-min.png 275w,
+            images/so-many-people-old-man-tablet@2X-min.png 550w
+          "
+        />
+        <img
+          srcset="
+            images/so-many-people-old-man-tablet@1X-min.png 275w,
+            images/so-many-people-old-man-tablet@2X-min.png 550w
+          "
+          sizes="275px"
+          src="images/so-many-people-old-man-tablet@1X-min.png"
+          alt="Old Thinking man"
+          class="so-many-people__img-old-man"
+        />
+      </picture>
+    </div>
   </div>
-  <div class="so-many-people__img-man hidden-mobile">
-    <img
-      src="images/so-many-people-thinking-man-tablet-desctop@1X-min.png"
-      alt="thinking young guy"
-      sizes="274px"
-      srcset="
-        images/so-many-people-thinking-man-tablet-desctop@1X-min.png 274w,
-        images/so-many-people-thinking-man-tablet-desctop@1X-min.png 548w
-      "
-      height="169"
-    />
-  </div>
-  <div class="so-many-people__img-old-man hidden-desctop">
-    <img
-      srcset="
-        images/so-many-people-old-man-desctop@1X.png 306w,
-        images/so-many-people-old-man-desctop@2X.png 612w
-      "
-      sizes="306px"
-      src="images/so-many-people-old-man-desctop@1X.png"
-      alt="thinking man with a gray beard"
-      height="251"
-      width="306"
-    />
-  </div>
-  <div class="hidden-mobile">
-    <img
-      class="so-many-people__img-old-man"
-      srcset="
-        images/so-many-people-thinking-old-man-tablet-desctop@1X-min.png 244w,
-        images/so-many-people-thinking-old-man-tablet-desctop@2X-min.png 488w
-      "
-      sizes="244px"
-      src="images/so-many-people-thinking-old-man-tablet-desctop@1X-min.png"
-      alt="thinking man with a gray beard"
-      height="225"
-      width="244"
-    />
-  </div>
+
   <div class="so-many-people__paragraph--tablet">
     <div class="so-many-people__paragraph">
       <div class="so-many-people__paragraph-title">
@@ -103,34 +102,34 @@
         </p>
       </div>
     </div>
-
     <div class="so-many-people__img-old-man hidden-tablet">
       <img
         srcset="
-          images/so-many-people-thinking-old-man-mobile@1X-min.png 445w,
-          images/so-many-people-thinking-old-man-mobile@2X-min.png 890w
+          images/so-many-people-old-man-mobie@1X-min.png  447w,
+          images/so-many-people-old-man-mobile@2X-min.png 894w
         "
-        sizes="445px"
-        src="images/so-many-people-thinking-old-man-mobile@1X-min.png"
+        sizes="447px"
+        src="images/so-many-people-old-man-mobie@1X-min.png"
         alt="thinking man with a gray beard"
-        height="209"
         width="445"
       />
     </div>
     <div class="so-many-people__paragraph">
       <div class="so-many-people__paragraph-title">
         <p>
-          <span class="word-wrap-mobile paragrah-title paragrah-title--invers">
-            Но если ты не хочешь
+          <span class="paragrah-title paragrah-title--invers">
+            Но если
+            <br class="hidden-mobile" />
+            ты не хочешь
           </span>
         </p>
         <p>
-          <span class="word-wrap-mobile paragrah-title paragrah-title--invers">
-            углубляться в дебри
+          <span class="paragrah-title paragrah-title--invers">
+            углубляться <br class="hidden-mobile" />в дебри
           </span>
         </p>
         <p>
-          <span class="word-wrap-mobile paragrah-title paragrah-title--invers"
+          <span class="paragrah-title paragrah-title--invers"
             >программирования</span
           >
         </p>

@@ -14,9 +14,10 @@ html {
     display: block;
   }
 }
+/*элемент виден на таблетке, desctop*/
 .hidden-mobile {
   display: none;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
@@ -32,12 +33,6 @@ html {
   display: none;
   @media screen and (min-width: 1200px) {
     display: block;
-  }
-}
-.word-wrap-mobile {
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: inline;
   }
 }
 .container {
