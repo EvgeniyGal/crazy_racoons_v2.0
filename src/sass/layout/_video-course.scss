@@ -1,3 +1,257 @@
+.vc {
+  margin-bottom: 9rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 9.6rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12.4rem;
+  }
+
+  &__item {
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-content: center;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 4rem;
+
+      @media screen and (min-width: 768px) {
+        img {
+          width: 22.4rem;
+          margin-left: 2rem;
+          
+          @media screen and (min-width: 1200px) {
+            width: 25.6rem;
+            margin-left: 3.6rem;
+          }
+        }
+      }
+    }
+
+    &:first-child {
+      align-items: center;
+
+      .vc__item__box:first-child {
+        order: 1;
+      }
+
+      .section-title {
+        width: max-content;
+        margin: 0 auto 1.2rem auto;
+
+        @media screen and (min-width: 768px) {
+          width: 80%;
+          margin: 0 0 1rem 0;
+          text-align: left;
+        }
+      }
+
+      .section-title--descr-text {
+        width: 22rem;
+        margin: 0 0 3rem 12.2rem;
+
+        @media screen and (min-width: 768px) {
+          width: 47%;
+          margin: 0 0 0 4.6rem;
+        }
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 768px) {
+        .vc__item__box:first-child {
+          flex: 0 0 25%;
+        }
+
+        .vc__item__box:last-child {
+          flex: 0 0 75%;
+          display: flex;
+        }
+      }
+
+      .paragrah-title {
+        margin: 0 auto 2.2rem auto;
+        text-align: center;
+        flex-basis: 25%;
+
+        @media screen and (min-width: 768px) {
+          width: 10.4rem;
+          margin: 0;
+          text-align: left;
+        }
+
+        @media screen and (min-width: 1200px) {
+          width: 12rem;
+        }
+      }
+
+      .numbered-list-vert {
+        margin-left: 10.2rem;
+
+        @media screen and (min-width: 768px) {
+          display: flex;
+          flex: 0 0 100%;
+          margin: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+      }
+
+      .numbered-list-vert__item {
+        margin-bottom: 2.2rem;
+        width: 25.6rem;
+
+        &:nth-last-child(2) {
+          margin-bottom: 3.2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+          flex: 0 0 29%;
+
+          &:nth-child(-n + 3) {
+            margin-bottom: 1.8rem;
+          }
+
+          &:nth-child(n + 4) {
+            margin: 0;
+          }
+        }
+      }
+
+      .numbered-list-vert .paragrah-title {
+        margin: 0 0 0.8rem 0;
+        font-weight: 700;
+        text-transform: none;
+        text-align: left;
+
+        @media screen and (min-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+        display: flex;
+      }
+    }
+
+    &__box {
+      @media screen and (min-width: 768px) {
+        flex: 0 0 31rem;
+        justify-content: space-between;
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: 35.6rem;
+      }
+    }
+  }
+
+  &__pic-ws {
+    width: 45rem;
+
+    @media screen and (min-width: 768px) {
+      width: 27.4rem;
+    }
+  }
+
+  &__list {
+    margin: 0 0 0 8rem;
+    width: 30rem;
+
+    @media screen and (min-width: 768px) {
+      width: 28rem;
+      margin: 0;
+    }
+
+    &__item {
+      margin-bottom: 2.6rem;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin-bottom: 0.6rem;
+
+      @media screen and (min-width: 768px) {
+        width: 10rem;
+        flex-shrink: 0;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -2rem;
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 29%;
+      margin: 0;
+      align-self: flex-end;
+    }
+
+    &__sale {
+      font: 800 3.6rem $main-font;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.7rem;
+      }
+
+      > * {
+        font-size: 1.9rem;
+
+        @media screen and (min-width: 768px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &__box {
+      &:first-child {
+        margin-right: 2rem;
+
+        @media screen and (min-width: 768px) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .paragrah-title {
+      font-weight: 400;
+      font-size: 1.7rem;
+      background-color: $text-bg-colored;
+
+      @media screen and (min-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .content-text {
+      text-decoration: line-through;
+      font-size: 1.7rem;
+      font-weight: 800;
+
+      @media screen and (min-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+=======
 .video-course {
     text-align: center;
     &__header {
