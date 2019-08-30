@@ -14,14 +14,28 @@
 
     @media screen and (min-width: 768px) {
       display: flex;
-      align-content: ;
+      align-content: center;
     }
 
     &:nth-child(2) {
       margin-bottom: 4rem;
+
+      @media screen and (min-width: 768px) {
+        img {
+          width: 22.4rem;
+          margin-left: 2rem;
+          
+          @media screen and (min-width: 1200px) {
+            width: 25.6rem;
+            margin-left: 3.6rem;
+          }
+        }
+      }
     }
 
     &:first-child {
+      align-items: center;
+
       .vc__item__box:first-child {
         order: 1;
       }
@@ -49,14 +63,44 @@
     }
 
     &:last-child {
+      @media screen and (min-width: 768px) {
+        .vc__item__box:first-child {
+          flex: 0 0 25%;
+        }
+
+        .vc__item__box:last-child {
+          flex: 0 0 75%;
+          display: flex;
+        }
+      }
+
       .paragrah-title {
         margin: 0 auto 2.2rem auto;
         text-align: center;
-        width: 80%;
+        flex-basis: 25%;
+
+        @media screen and (min-width: 768px) {
+          width: 10.4rem;
+          margin: 0;
+          text-align: left;
+        }
+
+        @media screen and (min-width: 1200px) {
+          width: 12rem;
+        }
       }
 
       .numbered-list-vert {
         margin-left: 10.2rem;
+
+        @media screen and (min-width: 768px) {
+          display: flex;
+          flex: 0 0 100%;
+          margin: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
       }
 
       .numbered-list-vert__item {
@@ -66,6 +110,18 @@
         &:nth-last-child(2) {
           margin-bottom: 3.2rem;
         }
+
+        @media screen and (min-width: 768px) {
+          flex: 0 0 29%;
+
+          &:nth-child(-n + 3) {
+            margin-bottom: 1.8rem;
+          }
+
+          &:nth-child(n + 4) {
+            margin: 0;
+          }
+        }
       }
 
       .numbered-list-vert .paragrah-title {
@@ -73,6 +129,10 @@
         font-weight: 700;
         text-transform: none;
         text-align: left;
+
+        @media screen and (min-width: 768px) {
+          width: 100%;
+        }
       }
 
       @media screen and (min-width: 768px) {
@@ -105,8 +165,17 @@
     margin: 0 0 0 8rem;
     width: 30rem;
 
+    @media screen and (min-width: 768px) {
+      width: 28rem;
+      margin: 0;
+    }
+
     &__item {
       margin-bottom: 2.6rem;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
     }
 
     &:last-child {
@@ -115,6 +184,12 @@
 
     &__title {
       margin-bottom: 0.6rem;
+
+      @media screen and (min-width: 768px) {
+        width: 10rem;
+        flex-shrink: 0;
+        margin-right: 2rem;
+      }
     }
   }
 
@@ -123,17 +198,35 @@
     align-items: flex-end;
     margin-left: -2rem;
 
+    @media screen and (min-width: 768px) {
+      flex: 0 0 29%;
+      margin: 0;
+      align-self: flex-end;
+    }
+
     &__sale {
       font: 800 3.6rem $main-font;
 
+      @media screen and (min-width: 768px) {
+        font-size: 1.7rem;
+      }
+
       > * {
         font-size: 1.9rem;
+
+        @media screen and (min-width: 768px) {
+          font-size: 0.9rem;
+        }
       }
     }
 
     &__box {
       &:first-child {
         margin-right: 2rem;
+
+        @media screen and (min-width: 768px) {
+          margin-right: 1rem;
+        }
       }
     }
 
@@ -141,12 +234,20 @@
       font-weight: 400;
       font-size: 1.7rem;
       background-color: $text-bg-colored;
+
+      @media screen and (min-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
 
     .content-text {
       text-decoration: line-through;
       font-size: 1.7rem;
       font-weight: 800;
+
+      @media screen and (min-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 }
